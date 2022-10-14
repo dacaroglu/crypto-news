@@ -1,0 +1,59 @@
+
+  .tabs-vertical .tabs {
+	height: auto;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.tabs-vertical .tab a {
+  text-align:left;
+}
+
+.tabs-vertical .tab .active {
+	-moz-transition: border-color .5s ease;
+	-o-transition: border-color .5s ease;
+	-webkit-transition: border-color .5s ease;
+	transition: border-color .5s ease;
+	border-right: 3px solid pink;
+}
+
+.tabs-vertical .tab :hover {
+	border-right: 3px solid #eeeeee;
+}
+
+.tabs-vertical .indicator {
+	display: none;
+}
+
+.tabs-vertical .tab-content {
+	display: block;
+	/*  make tab content scrollable , by define height, then overflow: auto*/
+	height: 15.6vh;
+	overflow: auto;
+	overflow-y: auto;
+	overflow-x: auto;
+	/*  make tab content scrollable */
+}
+
+.tabs-vertical>.tab-content .active {
+	display: block;
+}
+
+#top,
+#bottom {
+	padding: 0;
+	margin: 0;
+	display: block;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+.current{
+    width: 20%;
+    text-align: center;
+}
+.emptyfav:hover{
+    color: green !important;
+  }
