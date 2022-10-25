@@ -73,14 +73,16 @@ export default class App extends Component  {
         <Banner />
         <Routes>
             
-            <Route path='/about' element= {<Banner />} />
+            <Route path='/about' element= {<CoinList/>} />
             <Route path='/news' element= {<Banner/>} />
             <Route path='/market' element= {<Banner/>} />
             <Route path='/profile' element= {<ProfileDetail user={this.state.user}/>} />
-            <Route path='/*' element= {<Home user = {this.state.user}/>} />
+            <Route path='*' element= {<Home user = {this.state.user}/>} />
         </Routes>
         
-        <div><CoinList/></div>
+        <div>
+        
+        </div>
         
 
         <div id="modal1" className="modal">

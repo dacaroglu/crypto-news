@@ -1,6 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import M from 'materialize-css'
+import CoinList from '../CoinList/CoinList'
 export default class ProfileDetail extends Component {
     state={
         usern:{favCoins:''}
@@ -56,7 +57,6 @@ export default class ProfileDetail extends Component {
   return (
     
     <div className="container">    
-
 		<div id="account" className="row">
             <div className='row'>
                 <div className='col s8'>
